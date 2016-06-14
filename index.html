@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Datavisualisation</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<button class='graphiques'>Amcharts/Highcharts</button>
+		<button class='d3js'>d3js</button>
+		<button class='raphaelJS'>raphaelJS</button>
+		<button class='google_maps'>Google Maps</button>
+		<button class='mydataviz'>My dataviz</button>
+
+
+	</header>
+	<div class='container'>
+		<div id='graphiques' class='page'>
+			<div id="chartDep"></div>
+			<div id="chartYear"></div>
+
+		</div>
+		<div id='d3js' class=' page hidden'>
+			<div id='select'>
+				<select id='selectYear'></select>
+			</div>
+			<div id ='graphs'>
+				<div id='graph_d3js'>
+				</div>
+			</div>
+		</div>
+		<div id='raphaelJS' class=' page hidden'>
+
+			<div id="pichart"></div>
+
+		</div>
+		<div id='google_maps' class=' page hidden'>
+		<div id='map'></div>
+		</div>
+		<div id='mydataviz' class=' page hidden'>
+			<p>My dataviz</p>
+		</div>
+		<footer></footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script src="http://www.amcharts.com/lib/3/themes/dark.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0/raphael-min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/graphael/0.5.1/g.raphael-min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/graphael/0.5.1/g.pie-min.js"></script>
+		<script src="JSON/aide_aux_festivals.js"></script>
+		<script src="index.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTQD0i0S8zRT6TnE9jltIpUCWxTVIYWfI&libraries=visualization,places,geometry&callback=dataviz.initMap"></script>
+
+	</body>
+	</html>
